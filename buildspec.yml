@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "replace me with real build commands..."
+      - if [ "$(cat index.html)" != "Automation for the People" ]; then exit 1; fi
 
 artifacts:
   files:
