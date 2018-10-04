@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - if [ "$(cat index.html)" != "Automation for MasterCard" ]; then exit 1; fi
+      - if [ "$(cat index.html)" != "Automation for the People" ]; then exit 1; fi
 
 artifacts:
   files:
