@@ -2,6 +2,9 @@ environments:
   - name: dev
     cluster:
       maxSize: 2
+  - name: acceptance
+    cluster:
+      maxSize: 2
   - name: production
     cluster:
       maxSize: 5
@@ -11,6 +14,8 @@ service:
   pathPatterns:
     - /*
   pipeline:
+    notify:
+      - michael.neil@stelligent.com
     source:
       provider: GitHub
       repo: mneil/mc
